@@ -1,5 +1,5 @@
 <?php
-define('SERVERURL', 'https://localhost/alocraise_route/');
+define('SERVERURL', 'https://localhost/route-alocraise/');
 define('HEAD', 'templates/head');
 define('FOOTER', 'templates/footer');
 

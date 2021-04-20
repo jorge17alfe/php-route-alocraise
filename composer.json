@@ -1,0 +1,13 @@
+{
+    "name": "jorge_luis/alocraise_route",
+    "description": "route Aloc_Raise",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "jorge17alfe",
+            "email": "66376888+jorge17alfe@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

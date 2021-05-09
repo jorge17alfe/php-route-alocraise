@@ -6,7 +6,6 @@ class Pages
 
     public  function __construct($page = null)
     {
-       
         self::loadPage($page);
     }
 
@@ -18,19 +17,16 @@ class Pages
     public static function loadPage($page = null)
     {
 
-        // self::insertEnterpriceUser($page);
+      
         self::insertPage();
         [$pages, $page] = self::callPage($page);
-        // self::verifySession($page);
         self::runPage($pages, $page);
     }
 
     public static function insertPage($parameter = null)
     {
-        // session_start();
-        self::registerPage('index', 'usuario/index', HEAD, FOOTER);
-        self::registerPage('page-404', 'includes/404', HEAD, FOOTER);
-       
+        // self::registerPage('index', 'pages/index', HEAD, FOOTER);
+        // self::registerPage('page-404', 'pages/page404', HEAD, FOOTER);
     }
 
    

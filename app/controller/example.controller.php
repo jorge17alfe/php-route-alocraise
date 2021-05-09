@@ -1,19 +1,19 @@
 <?php
 class exampleController
 {
-    public function index($data = null)
+    public function example1($data = null)
     {
-        view("index",HEAD,FOOTER,"");
+        view("pages/example1",HEAD,FOOTER,"");
     }
 
     public function example2($data = null)
     {
-        view("example2",HEAD,FOOTER,"");
+        view("pages/example2",HEAD,FOOTER,"");
     }
 
-    public function page404($data = null)
+    public function example3($data = null)
     
     {
-        view("templates/page404",HEAD,FOOTER,"");
+        view("pages/example3",HEAD,FOOTER,"");
     }
 }

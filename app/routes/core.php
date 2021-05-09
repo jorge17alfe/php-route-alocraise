@@ -8,7 +8,7 @@ class Core
         // exit();
         // $this->Geturl($_SERVER['REQUEST_URI']);
         if (!isset($_GET['url'])) {
-            $_GET['url'] = 'example/index';
+            $_GET['url'] = 'index';
         }
         $this->getUrl($_GET['url']);
     }
@@ -38,7 +38,7 @@ class Core
             $controller = ucwords($controller) . 'Controller';
             $controller = new $controller;
         } else {
-            page_404();
+            $this->page($url);
             die();
         }
 
@@ -72,6 +72,7 @@ class Core
 
     public function page($url)
     {
+        require "app/routes/routes.php";
         $controller = 'pages';
         require_once "app/routes/$controller.php";
         $controller = ucwords($controller);

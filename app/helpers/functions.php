@@ -35,5 +35,5 @@ function view($page = null, $head = null, $footer = null, $parameter = null)
 
 function page_404()
 {
-    redirect('example/page404');
+    redirect('page-404');
 }

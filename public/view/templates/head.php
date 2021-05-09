@@ -35,8 +35,24 @@
 </head>
 
 <body>
-    <div class="contaiter fluid text-center mx-auto ">
+    <div class="contaiter-fluid text-center mx-auto ">
         <div class="first"></div>
         <div class="container-fluid py-2 nav-logo mb-5 d-flex justify-content-start pl-5">
             <h2 class=" logo ">Aloc_Raise</h2>
         </div>
+        <div class=" container pb-3 border-bottom">
+            <h1>Routes System Aloc_Raise</h1>
+        </div>
+        <div class="container justify-content-around py-3 ">
+            <p class="font-weight-bolder">DIRECT ROUTE THROUGHT './app/routes/routes.php'</p>
+            <p><a href="<?= SERVERURL ?>">INDEX</a> throught the this https://<\site-name\>/</p>
+            <p><a href="<?= SERVERURL ?>page-404">PAGE-404</a> throught the this https://<\site-name\>/page-404</p>
+
+        </div>
+        <div class="container border-top py-3">
+            <p class="font-weight-bolder">ROUTE THROUGH OF THE CONTROLLER './app/controller/example.controller.php'</p>
+            <p><a href="<?= SERVERURL ?>example/example1">EXAMPLE1</a> throught the this https://<\site-name\>/example/example1</p>
+            <p><a href="<?= SERVERURL ?>example/example2">EXAMPLE2</a> throught the this https://<\site-name\>/example/example2</p>
+            <p><a href="<?= SERVERURL ?>example/example3">EXAMPLE2</a> throught the this https://<\site-name\>/example/example3</p>
+        </div>
+        <p class="border-bottom  pb-1 text-danger mb-5">"This finished the head" </p>
